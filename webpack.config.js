@@ -15,7 +15,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     plugins: [
-      new TsconfigPathWebpackPlugin({ baseUrl: '/src' })
+      new TsconfigPathWebpackPlugin({ baseUrl: './src' })
     ]
   },
   module: {
