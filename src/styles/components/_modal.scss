@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__main {
+    padding: 8px;
+    margin: 16px auto;
+    background-color: white;
+    max-width: 500px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &--close {
+    opacity: 0;
+    pointer-events: none;
+    .modal__main {
+      transform: translateY(-32px);
+    }
+  }
+
+  &--open {
+    opacity: 1;
+    pointer-events: unset;
+    .modal__main {
+      transform: translateY(0);
+    }
+  }
+
+
+}

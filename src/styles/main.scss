@@ -1,7 +1,7 @@
 @import
   'base/reset',
-  'base/typography';
-
+  'base/typography',
+  'base/spacing';
 
 @import
   'abstracts/mixins',
@@ -9,5 +9,14 @@
   'abstracts/variables';
 
 @import
+  'components/modal',
   'components/button',
-  'components/input'
+  'components/input';
+
+@import
+  'layout/base',
+  'layout/header',
+  'layout/footer';
+
+@import
+  'pages/home';
