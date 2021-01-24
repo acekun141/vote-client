@@ -1,0 +1,24 @@
+.button {
+  padding: 1em 2em;
+  background-color: var(--color-primary);
+  color: var(--white);
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  &--success {
+    background-color: var(--color-success);
+  }
+
+  &--warning {
+    background-color: var(--color-warning);
+  }
+
+  &--danger {
+    background-color: var(--color-accent);
+  }
+}
