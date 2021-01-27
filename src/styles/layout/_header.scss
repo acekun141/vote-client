@@ -1,4 +1,50 @@
-header {
-  padding: var(--space-md);
-  background-color: yellow;
+.header {
+  display: flex;
+  background-color: var(--white);
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--gray-1);
+  &__toggle {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 auto;
+    display: flex;
+    @include breakpoint(md) {
+      display: none;
+    }
+    svg {
+      stroke: var(--gray-10);
+      fill: var(--gray-10);
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    h2 {
+      margin: 0;
+    }
+  }
+  &__nav {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    list-style-type: none;
+    @include breakpoint(md) {
+      display: flex;
+    }
+  }
+  &__item {
+    margin-left: var(--space-md);
+  }
+  &__link {
+    color: var(--gray-10);
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

@@ -1,23 +1,27 @@
 @import
+'abstracts/mixins',
+'abstracts/placeholders',
+'abstracts/variables';
+
+@import
   'base/reset',
   'base/spacing',
   'base/color',
   'base/typography';
 
 @import
-  'abstracts/mixins',
-  'abstracts/placeholders',
-  'abstracts/variables';
-
-@import
   'components/modal',
   'components/button',
-  'components/input';
+  'components/input',
+  'components/section-name',
+  'components/vote-item',
+  'components/list-vote';
 
 @import
   'layout/base',
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/sidebar';
 
 @import
   'pages/home';

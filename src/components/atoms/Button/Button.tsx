@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface IProps {
+interface IProps extends React.ButtonHTMLAttributes<any> {
   children: any;
 }
 

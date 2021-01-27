@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
-      Footer
+      leviethung - 2021
     </footer>
   )
 }

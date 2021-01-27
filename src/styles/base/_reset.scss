@@ -2,5 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: var(--color-body);
+}
+
+html {
+  background-color: var(--gray-1);
+  font-family: var(--font-primary);
 }

@@ -1,0 +1,13 @@
+.list-vote {
+  padding: var(--space-xl);
+  display: grid;
+  grid-column-gap: var(--space-lg);
+  grid-row-gap: var(--space-lg);
+  grid-template-columns: auto;
+  @include breakpoint(sm) {
+    grid-template-columns: auto auto;
+  }
+  @include breakpoint(md) {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
