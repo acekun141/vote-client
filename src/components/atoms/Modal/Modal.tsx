@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoClose } from 'react-icons/io5';
 
 interface IProps {
   isOpen: boolean;
@@ -26,7 +27,9 @@ export const ModalHeader = (props: IModalHeader) => {
   return (
     <div className="modal__header">
       {props.children}
-      <button onClick={props.handleClose}>Close</button>
+      <button onClick={props.handleClose}>
+        <IoClose size="2em" />
+      </button>
     </div>
   )
 }

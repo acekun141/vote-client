@@ -3,6 +3,7 @@ import { IoAppsSharp } from "react-icons/io5";
 
 interface IProps {
   toggleSidebar: () => void;
+  openLogin: () => void;
 }
 
 
@@ -17,10 +18,10 @@ const Header = (props: IProps) => {
       </button>
       <ul className="header__nav">
         <li className="header__item">
-          <a className="header__link">Danh sach binh chon</a>
+          <a className="header__link">Danh sách bình chọn</a>
         </li>
         <li className="header__item">
-          <a className="header__link">Đăng nhập</a>
+          <a className="header__link" onClick={props.openLogin}>Đăng nhập</a>
         </li>
       </ul>
     </header>

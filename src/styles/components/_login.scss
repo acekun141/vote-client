@@ -1,0 +1,12 @@
+.login-form {
+  background-color: pink;
+  margin-top: var(--space-md);
+  .button--facebook {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    svg {
+      margin-right: var(--space-md);
+    }
+  }
+}

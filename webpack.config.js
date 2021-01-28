@@ -35,6 +35,8 @@ module.exports = {
   ],
   devServer: {
     historyApiFallback: true,
-    open: true
+    open: true,
+    port: 8888,
+    host: '0.0.0.0'
   }
 }

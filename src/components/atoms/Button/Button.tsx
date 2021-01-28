@@ -4,9 +4,9 @@ interface IProps extends React.ButtonHTMLAttributes<any> {
   children: any;
 }
 
-const Button = ({ children, ...rest }: IProps) => {
+const Button = ({ children, className = '', ...rest }: IProps) => {
   return (
-    <button className="button" {...rest}>
+    <button className={`button ${className}`} {...rest}>
       { children }
     </button>
   )

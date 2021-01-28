@@ -7,6 +7,8 @@
     background-color: var(--gray-3);
     height: 500px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
     img {
       height: 100%;
     }
@@ -22,9 +24,19 @@
     }
   }
   .button {
+    font-family: var(--font-primary);
     display: flex;
     justify-content: center;
     width: 100%;
     font-size: var(--text-md);
+    background-color: transparent;
+    border: 2px solid var(--gray-10);
+    color: var(--gray-10);
+    font-weight: bold;
+    span {
+      margin-left: var(--space-xs);
+      font-weight: bold;
+      color: var(--color-accent);
+    }
   }
 }

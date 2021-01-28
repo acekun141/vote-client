@@ -2,7 +2,18 @@
   padding: var(--space-xl) var(--space-lg);
   background-color: var(--white);
   margin-bottom: var(--space-lg);
-  h2 {
-    font-size: var(--text-xxxl) !important;
+  @include breakpoint(xs) {
+    padding: var(--space-lg) var(--space-lg);
+  }
+  h1 {
+    @include breakpoint(xs) {
+      font-size: var(--text-lg) !important;
+    }
+    @include breakpoint(sm) {
+      font-size: var(--text-xxl) !important;
+    }
+    @include breakpoint(md) {
+      font-size: var(--text-xxxl) !important;
+    }
   }
 }

@@ -22,4 +22,9 @@
   &--danger {
     background-color: var(--color-accent);
   }
+
+  &--facebook {
+    background-color: var(--color-facebook);
+    color: var(--white);
+  }
 }
