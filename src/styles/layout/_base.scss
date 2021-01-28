@@ -1,4 +1,6 @@
 .layout {
   min-height: 100vh;
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
   main {}
 }

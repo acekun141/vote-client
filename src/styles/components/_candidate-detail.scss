@@ -1,0 +1,27 @@
+.candidate-detail {
+  padding: var(--space-lg);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  .candidate-detail__name {
+    font-size: var(--text-xxxl);
+    font-weight: normal;
+  }
+  .candidate-detail__content {
+    color: var(--gray-4);
+    margin-bottom: var(--space-lg);
+  }
+  .candidate-detail__button {
+    margin-top: auto;
+    width: 100%;
+    font-size: var(--text-md);
+    background: transparent;
+    border: 2px solid var(--gray-10);
+    color: var(--gray-10);
+    span {
+      margin-left: var(--space-xs);
+      color: var(--color-accent);
+      font-weight: bold;
+    }
+  }
+}

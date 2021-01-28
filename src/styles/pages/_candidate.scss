@@ -1,0 +1,35 @@
+.candidate {
+  height: 100%;
+  background-color: var(--white);
+  @include breakpoint(md) {
+    padding: var(--space-lg);
+  }
+  .candidate__image {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    .image {
+      width: 100%;
+      display: block;
+      opacity: 0.3;
+    }
+    .bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1;
+      display: none;
+    }
+  }
+  .candidate__content {
+    .candidate-detail {
+      height: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+  }
+}

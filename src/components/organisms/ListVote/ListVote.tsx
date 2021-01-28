@@ -1,5 +1,5 @@
 import React from "react";
-import VoteItem from "../VoteItem";
+import VoteItem from "./VoteItem";
 
 const ListVote = () => {
   return (

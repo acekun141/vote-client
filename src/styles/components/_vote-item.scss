@@ -15,9 +15,15 @@
   }
   &__content {
     padding: var(--space-sm);
-    h3 {
+    a {
+      font-family: var(--font-secondary);
       font-weight: 500;
       font-size: var(--text-xl);
+      color: var(--black);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
     p {
       color: var(--gray-6);

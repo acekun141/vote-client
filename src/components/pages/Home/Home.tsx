@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseLayout from 'components/organisms/BaseLayout';
-import SectionName from 'components/organisms/SectionName';
+import SectionName from 'components/atoms/SectionName';
 import ListVote from 'components/organisms/ListVote';
 
 const Home = () => {

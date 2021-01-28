@@ -1,14 +1,20 @@
 .button {
-  padding: 1em 2em;
+  padding: var(--space-sm);
   background-color: var(--gray-10);
   color: var(--white);
   outline: 0;
   border: 0;
   cursor: pointer;
+  font-family: var(--font-primary);
 
   &:active {
     transform-origin: 50% 50%;
     transform: scale(0.99);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
   }
 
   &--success {

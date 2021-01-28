@@ -11,7 +11,7 @@ const Login = ({ isOpen, handleClose }: IProps) => {
   return (
     <Modal isOpen={isOpen}>
       <ModalHeader handleClose={handleClose}>
-        <h2>Login</h2>
+        <h2>Đăng nhập</h2>
       </ModalHeader>
       <LoginForm />
     </Modal>

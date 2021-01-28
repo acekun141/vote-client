@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoAppsSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 interface IProps {
   toggleSidebar: () => void;
@@ -18,7 +19,7 @@ const Header = (props: IProps) => {
       </button>
       <ul className="header__nav">
         <li className="header__item">
-          <a className="header__link">Danh sách bình chọn</a>
+          <Link to="/" className="header__link">Danh sách bình chọn</Link>
         </li>
         <li className="header__item">
           <a className="header__link" onClick={props.openLogin}>Đăng nhập</a>

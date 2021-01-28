@@ -1,7 +1,7 @@
 @import
-'abstracts/mixins',
-'abstracts/placeholders',
-'abstracts/variables';
+  'abstracts/mixins',
+  'abstracts/placeholders',
+  'abstracts/variables';
 
 @import
   'base/reset',
@@ -16,7 +16,8 @@
   'components/section-name',
   'components/vote-item',
   'components/list-vote',
-  'components/login';
+  'components/login',
+  'components/candidate-detail';
 
 @import
   'layout/base',
@@ -25,4 +26,5 @@
   'layout/sidebar';
 
 @import
-  'pages/home';
+  'pages/home',
+  'pages/candidate';
