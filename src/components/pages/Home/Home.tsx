@@ -1,16 +1,15 @@
 import React from 'react';
-import BaseLayout from 'components/organisms/BaseLayout';
 import SectionName from 'components/atoms/SectionName';
 import ListVote from 'components/organisms/ListVote';
 
 const Home = () => {
   return (
-    <BaseLayout>
+    <React.Fragment>
       <SectionName name="Danh sách bình chọn" />
       <div className="home">
         <ListVote />
       </div>
-    </BaseLayout>
+    </React.Fragment>
   )
 }
 
