@@ -1,0 +1,11 @@
+.loading {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  svg {
+    animation: linear 0.8s loading infinite;
+  }
+}
+

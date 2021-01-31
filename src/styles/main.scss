@@ -1,7 +1,8 @@
 @import
   'abstracts/mixins',
   'abstracts/placeholders',
-  'abstracts/variables';
+  'abstracts/variables',
+  'abstracts/animations';
 
 @import
   'base/reset',
@@ -17,7 +18,8 @@
   'components/vote-item',
   'components/list-vote',
   'components/login',
-  'components/candidate-detail';
+  'components/candidate-detail',
+  'components/loading';
 
 @import
   'layout/base',

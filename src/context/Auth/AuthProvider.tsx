@@ -1,17 +1,13 @@
 import React, {useEffect, useState} from 'react';
-import AuthContext, {IAuthContext, IUser} from './AuthContext';
+import AuthContext, { IAuthContext } from './AuthContext';
+import Loading from 'components/atoms/Loading';
 
 interface IProps {
   children: React.ReactNode
 }
 
-interface IState {
-  status: 'pending' | 'success' | 'error',
-  user: IUser
-}
-
 const AuthProvider: React.FunctionComponent<IProps> = (props) => {
-  const [state, setState] = useState<IState>({
+  const [state, setState] = useState<IAuthContext>({
     status: 'pending',
     user: null
   });
@@ -29,7 +25,9 @@ const AuthProvider: React.FunctionComponent<IProps> = (props) => {
   return (
     <AuthContext.Provider value={state}>
       {state.status === 'pending' ? (
-        'Loading...'
+        <div style={{ height: '100vh' }}>
+          <Loading />
+        </div>
       ) : state.status === 'error' ? (
         'Error'
       ) : (
