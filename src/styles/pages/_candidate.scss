@@ -1,6 +1,5 @@
 .candidate {
   height: 100%;
-  background-color: var(--white);
   @include breakpoint(md) {
     padding: var(--space-lg);
   }

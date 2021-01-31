@@ -6,6 +6,8 @@
     padding: var(--space-lg) var(--space-lg);
   }
   h1 {
+    text-transform: uppercase;
+    font-weight: normal;
     @include breakpoint(xs) {
       font-size: var(--text-lg) !important;
     }
